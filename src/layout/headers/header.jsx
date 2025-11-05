@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import NavMenu from './nav-menu';
+import MobileMenus from './mobile-menus';
 import LangLogo from "@assets/img/logo/logo-lang.png";
 import useSticky from '@/src/hooks/use-sticky';
 import HamburgerBtn from '@/src/svg/hamburger-btn';
@@ -16,6 +17,7 @@ const HeaderOne = () => {
    const langToggleRef = useRef(null);
    const [searchOpen, setSearchOpen] = useState(false)
    const [sidebarOpen, setSidebarOpen] = useState(false)
+   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
    const [isLangListOpen, setIsLangListOpen] = useState(false);
    useEffect(() => {
@@ -75,15 +77,8 @@ const HeaderOne = () => {
                   <div className="tp-header-bottom-space p-relative">
                      <div className="container-fluid gx-0">
                         <div className="row gx-0 align-items-center">
-                           <div className="col-xxl-3 col-xl-3">
+                           <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-6">
                            <div className="tp-header-main-left d-flex align-items-center p-relative">
-                              {/* <div className="tp-header-hamburger-btn offcanvas-open-btn" 
-                               style={{backgroundImage: `url(/assets/img/icon/header-hamburger-shape.png)`}}
-                               onClick={() => setSidebarOpen(true)}>
-                                 <button className="hamburger-btn">
-                                    <span> <HamburgerBtn /></span>
-                                 </button>
-                                 </div> */}
                                  <div className="tp-header-logo">
                                     <Link href="/">
                                        <Image src={Logo2} alt="theme-pure" height={50} width={160} />
@@ -91,7 +86,7 @@ const HeaderOne = () => {
                                  </div>
                               </div>
                               </div>
-                           <div className="col-xxl-6 col-xl-6 d-none d-xl-block">
+                           <div className="col-xxl-6 col-xl-6 col-lg-6 d-none d-lg-block">
                               <div className="tp-main-menu-area d-flex align-items-center">
                                  <div className="tp-main-menu menu-icon">
                                  <span className="header-icon"><HomeIcon /></span>
@@ -101,13 +96,21 @@ const HeaderOne = () => {
                                  </div>
                               </div>
                            </div>
-                           <div className="col-xxl-3 col-xl-3">
-                           <div className="tp-header-main-right d-flex align-items-center justify-content-xl-end">
-                              <div className="tp-header-search search-open-btn d-none d-xxl-block">
+                           <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
+                           <div className="tp-header-main-right d-flex align-items-center justify-content-end">
+                              <div className="tp-header-search search-open-btn d-none d-lg-block">
                                  <button onClick={() => setSearchOpen(true)}><i className="fa-regular fa-magnifying-glass"></i></button>
                               </div>
-                                 <div className="tp-header-btn d-none d-xl-block pl-40">
+                                 <div className="tp-header-btn d-none d-lg-block pl-40">
                                     <Link className="tp-btn" href="/contact">Get Started Today</Link>
+                                 </div>
+                                 
+                                 {/* Mobile Menu Toggle */}
+                                 <div className="tp-header-hamburger-btn d-lg-none" 
+                                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                                    <button className="hamburger-btn">
+                                       <span><i className="fa-solid fa-bars"></i></span>
+                                    </button>
                                  </div>
                               </div>
                            </div>
@@ -116,6 +119,47 @@ const HeaderOne = () => {
                   </div>
                </div>
             </header>
+            
+            {/* Mobile Menu Offcanvas */}
+            <div className={`tp-offcanvas-area ${mobileMenuOpen ? 'offcanvas-opened' : ''}`}>
+               <div className="tp-offcanvas-wrapper">
+                  <div className="tp-offcanvas-close-btn" onClick={() => setMobileMenuOpen(false)}>
+                     <button><i className="fa-solid fa-xmark"></i></button>
+                  </div>
+                  <div className="tp-offcanvas-content">
+                     <div className="tp-offcanvas-logo mb-40">
+                        <Link href="/">
+                           <Image src={Logo2} alt="theme-pure" height={50} width={160} />
+                        </Link>
+                     </div>
+                     <div className="tp-offcanvas-menu">
+                        <MobileMenus />
+                     </div>
+                     <div className="tp-offcanvas-btn mt-40">
+                        <Link className="tp-btn w-100 text-center" href="/contact">Get Started Today</Link>
+                     </div>
+                     <div className="tp-offcanvas-contact mt-40">
+                        <h4 className="tp-offcanvas-title mb-20">Contact Info</h4>
+                        <ul>
+                           <li>
+                              <i className="fa-solid fa-location-dot"></i>
+                              <span>Metro Pillar 267, 1281 Begum Rokeya Avenue, Mirpur, Dhaka</span>
+                           </li>
+                           <li>
+                              <i className="fa-solid fa-envelope"></i>
+                              <a href="mailto:info@naastech.com">info@naastech.com</a>
+                           </li>
+                           <li>
+                              <i className="fa-solid fa-phone"></i>
+                              <a href="tel:+8801772337656">+8801772337656</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div className={`body-overlay ${mobileMenuOpen ? 'opened' : ''}`} onClick={() => setMobileMenuOpen(false)}></div>
+            
             <SearchPopup searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         </>

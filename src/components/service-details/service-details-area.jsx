@@ -6,41 +6,23 @@ import ServiceContactForm from '@/src/forms/service-contact-form';
 import service_details_thumb from  "@assets/img/services/service-details/img-1.jpg";
 import service_video_thumb from  "@assets/img/services/service-details/img-2.jpg";
 import RightSymbol from '@/src/svg/right-symbol';
-import accordion from '@/src/data/accordion';
+import { sidebar_services } from '@/src/data/service-details-data';
 
-const service_details_content = {
-  service_details_tab: [
-    { id: 1, title: "Product Design",        active: "active" },
-    { id: 2, title: "Discovery & Research",  active: "" },
-    { id: 3, title: "Performance & Speed",   active: "" },
-    { id: 4, title: "Lifecycle Marketing",   active: "" },
-    { id: 5, title: "Analytics & Insights",  active: "" },
-    { id: 6, title: "Content & Media",       active: "" },
-  ],
-
-  title: <>Human‑Centered Product Delivery</>,
-
-  description: <>Naasmind connects technology and people—turning ideas into usable products with clear strategy, accessible design, and reliable engineering. The result: faster releases, lower risk, and measurable business impact.</>,
-
-  title_2: <>Why it matters</>,
-
-  description_2: <>Teams ship confidently when strategy, UX, and engineering move in one track—guided by data and focused on outcomes.</>,
-
-  feture_list: [
-    <>Discovery to launch: one plan, one team.</>,
-    <>Performance budgets and speed optimization baked in.</>,
-    <>Dashboards and KPIs for data‑driven decisions.</>,
-  ],
-
-  description_3: <>Need changes or extensions? The architecture is modular, the design system reusable, and delivery pipelines automated—so improvements ship quickly without disrupting your roadmap.</>,
-};
-
-
-const {service_details_tab, title, description, title_2, description_2, feture_list, description_3} = service_details_content
-
-const ServiceDetailsArea = () => {
+const ServiceDetailsArea = ({ serviceData }) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const [isActive, setIsActive] = useState(1)
+  const [isActive, setIsActive] = useState(1);
+
+  // Use serviceData if provided, otherwise use default content
+  const title = serviceData?.title || "Human‑Centered Product Delivery";
+  const intro = serviceData?.intro || "Naasmind connects technology and people—turning ideas into usable products with clear strategy, accessible design, and reliable engineering. The result: faster releases, lower risk, and measurable business impact.";
+  const benefitSubheading = serviceData?.benefitSubheading || "Why it matters";
+  const benefitSummary = serviceData?.benefitSummary || "Teams ship confidently when strategy, UX, and engineering move in one track—guided by data and focused on outcomes.";
+  const features = serviceData?.features || [
+    "Discovery to launch: one plan, one team.",
+    "Performance budgets and speed optimization baked in.",
+    "Dashboards and KPIs for data‑driven decisions."
+  ];
+  const faqs = serviceData?.faqs || [];
 
     return (
         <>
@@ -53,9 +35,11 @@ const ServiceDetailsArea = () => {
                         <div className="tp-service-widget-item mb-40">
                            <div className="tp-service-widget-tab">
                               <ul>
-                                   {service_details_tab.map((item, i)  => 
+                                   {sidebar_services.map((item, i)  => 
                                     <li key={i}>
-                                        <Link className={item.active} href="/service-details">
+                                        <Link 
+                                          className={serviceData?.slug === item.slug ? "active" : ""} 
+                                          href={`/service-details/${item.slug}`}>
                                         {item.title} <i className="fa-regular fa-arrow-right-long"></i>
                                         </Link>
                                     </li>
@@ -67,6 +51,7 @@ const ServiceDetailsArea = () => {
                         <div className="tp-service-widget-item mb-40">
                            <div className="tp-service-contact">
                               <div className="tp-service-contact-form">
+                                <h4 className="tp-service-widget-title mb-20">Contact an Expert</h4>
                                 <ServiceContactForm />
                                  <p className="ajax-response"></p>
                               </div>
@@ -81,7 +66,7 @@ const ServiceDetailsArea = () => {
                            <Image src={service_details_thumb} alt="theme-pure" />
                         </div>
                         <h3 className="tp-service-details-title">{title}</h3>
-                        <p>{description}</p>
+                        <p>{intro}</p>
                         <div className="row">
                            <div className="col-lg-6">
                               <div className="tp-service-details-thumb p-relative">
@@ -96,37 +81,37 @@ const ServiceDetailsArea = () => {
                            </div>
                            <div className="col-lg-6">
                               <div className="tp-service-details-list">
-                                 <h3 className="tp-service-details-title">{title_2}</h3>
-                                 <p>{description_2}</p>
+                                 <h3 className="tp-service-details-title">{benefitSubheading}</h3>
+                                 <p>{benefitSummary}</p>
                                  <ul>
-                                    {feture_list.map((item, i) => 
+                                    {features.map((item, i) => 
                                     <li key={i}><span> <RightSymbol /></span>{item}</li> 
                                     )} 
                                  </ul>
                               </div>
                            </div>
                         </div>
-                        <p>{description_3}</p>
 
-                        <div className="tp-service-details-faq faq-style-1">
+                        <div className="tp-service-details-faq faq-style-1 mt-50">
+                           <h3 className="tp-service-details-title mb-30">Frequently Asked Questions</h3>
                            <div className="tp-faq-tab-content tp-accordion">
                               <div className="accordion" id="general_accordion">
-                                {accordion.map((item, i) => 
-                                <div key={i} onClick={() => setIsActive(item.id)} className={`accordion-item ${isActive === item.id && "tp-faq-active"}`}>
-                                    <h2 className="accordion-header" id={`heading${item.accordion_id}`}>
+                                {faqs.map((item, i) => 
+                                <div key={i} onClick={() => setIsActive(i + 1)} className={`accordion-item ${isActive === (i + 1) && "tp-faq-active"}`}>
+                                    <h2 className="accordion-header" id={`heading${i}`}>
                                     <button 
-                                        className={`accordion-button ${item.collapsed}`} 
+                                        className={`accordion-button ${i !== 0 ? "collapsed" : ""}`} 
                                         type="button" 
                                         data-bs-toggle="collapse" 
-                                        data-bs-target={`#collapse${item.accordion_id}`} 
-                                        aria-expanded={item.aria_expanded}
-                                        aria-controls={`collapse${item.accordion_id}`}>
+                                        data-bs-target={`#collapse${i}`} 
+                                        aria-expanded={i === 0}
+                                        aria-controls={`collapse${i}`}>
                                         {item.question}
                                     </button>
                                     </h2>
-                                    <div id={`collapse${item.accordion_id}`} 
-                                        className={`accordion-collapse collapse ${item?.active && "show"}`} 
-                                        aria-labelledby={`heading${item.accordion_id}`} 
+                                    <div id={`collapse${i}`} 
+                                        className={`accordion-collapse collapse ${i === 0 ? "show" : ""}`} 
+                                        aria-labelledby={`heading${i}`} 
                                         data-bs-parent="#general_accordion">
                                         <div className="accordion-body">
                                             <p>{item.answer}</p>

@@ -57,14 +57,15 @@ const TeamArea = () => {
                         <div className="col-lg-6">
                             <div className="tp-team-title-wrapper">
                                 <span className="tp-section-title__pre">
-                                best <span className="title-pre-color">IT Solutions</span>
+                                Our <span className="title-pre-color">Team</span>
                                 <AngleArrow /> 
                                 </span>
-                                <h3 className="tp-section-title">Best Digital 
+                                <h3 className="tp-section-title">The Minds Behind Your 
                                 <span className="title-color">
                                     Technology
-                                </span> <br /> Agency For People
+                                </span>
                                 </h3>
+                                <p className="mt-3">Our strength lies in our people. The Naasmind team is a dedicated group of certified engineers, strategic IT advisors, and passionate problem-solvers. We don't just see networks and servers; we see our clients' ambitions and the critical systems they rely on. Every member of our team is committed to providing exceptional service and building the long-term, trust-based relationships that our partners deserve.</p>
                             </div>
                         </div>
                         <div className="col-lg-6">

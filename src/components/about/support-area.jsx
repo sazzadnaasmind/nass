@@ -13,16 +13,14 @@ import support_img_3 from "@assets/img/about/home-3/img-3.jpg";
 import support_shape from "@assets/img/about/home-3/shape-1.png";
 
 const support_contact = {
-//   sub_title_1: "We’ve been building",
-//   sub_title_2: " 6+ years",
-  sub_title_1: "",
-  sub_title_2: " ",
-  info: <>We deliver human centered technology services strategy, design, and engineering to turn ideas into scalable digital products.</>,
+  sub_title_1: "Our",
+  sub_title_2: " Journey",
+  info: <>Naasmind was born from a clear need observed in the Bangladeshi business landscape. We saw ambitious companies, manufacturers, startups, retailers struggling with IT infrastructure that was holding them back. They were dealing with constant downtime, worrying about cybersecurity threats, and paying for IT support that only showed up after a disaster had already struck.</>,
   lists: [
-    <>End to end delivery: discovery, UX, development, QA, and launch.</>,
-     <>Platforms: Mobile Apps and Web.</>,
-    <>Modernization and automation to reduce cost and accelerate release cycles.</>,
-    <>Data informed decisions with measurable business outcomes.</>,
+    <>We knew there had to be a better way.</>,
+    <>We built Naasmind to be the company we wished existed: a true technology partner with deep local expertise, committed to our clients' success.</>,
+    <>Our journey began with a focus on proactive management and has grown into a comprehensive suite of services.</>,
+    <>Our core mission has never wavered: to handle the technology, so our partners can focus on building their businesses.</>,
   ]
 };
 
@@ -39,7 +37,7 @@ const SupportArea = ()  => {
                <div className="col-lg-6">
                   <div className="tp-fun-fact-title-wrapper support-breadcrumb">
                      <span className="tp-section-title__pre">
-                        service <span className="title-pre-color">IT Solutions</span>
+                        Our <span className="title-pre-color">Story</span>
                         <AngleArrow /> 
                      </span>
                      <h3 className="tp-section-title">

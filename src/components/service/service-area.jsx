@@ -17,15 +17,15 @@ const ServiceArea = () => {
                                 <AngleArrow /> 
                             </span>
                             <h3 className="tp-section-title">
-                                Best Digital <span className="title-color">Technology</span> <br /> Agency For People
+                                Solutions That <span className="title-color">Enable</span> Growth
                             </h3>
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="tp-service-breadcrumb-title-wrapper justify-content-start justify-content-xl-end d-flex">
                             <p>
-                                As the complexity of buildings to increase, the field of architecture <br />
-                                became multi-disciplinary with technological expertise.
+                                We offer a complete suite of IT services designed to protect your assets, <br />
+                                empower your team, and scale your operations efficiently.
                             </p>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ const ServiceArea = () => {
                                     <Image src={item.icon} alt="theme-pure" />
                                 </div>
                                 <h4 className="tp-service-breadcrumb-title">
-                                    <Link href="/service-details">{item.title}</Link></h4>
+                                    <Link href={`/service-details/${item.slug}`}>{item.title}</Link></h4>
                                 <p>{item.description}</p>
                                 <div className="tp-service-btn">
-                                    <Link href="/service-details">
-                                        Read More 
+                                    <Link href={`/service-details/${item.slug}`}>
+                                        Read More
                                         <i className="fa-solid fa-arrow-up-right"></i>
                                     </Link>
                                 </div>
@@ -53,9 +53,9 @@ const ServiceArea = () => {
                     <div className="row justify-content-center">
                         <div className="col-xl-8 text-center">
                             <div className="tp-about-call fadeUp">
-                                <a href="tel:01310-069824">
+                                <a href="tel:+8801772337656">
                                     <p><i className="fa-solid fa-phone"></i> 
-                                    Provide IT services to hundreds customers <span>+8801772337656</span>
+                                    Providing mission-critical IT services to hundreds of Bangladeshi businesses. Call <span>+8801772337656</span>
                                     </p>
                                 </a>
                             </div>

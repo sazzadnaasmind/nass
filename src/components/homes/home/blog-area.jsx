@@ -20,7 +20,7 @@ const BlogArea = () => {
                                     Upcoming <span className="title-pre-color">News</span>
                                     <AngleArrow /> 
                                 </span>
-                                <h3 className="tp-section-title">Recent Blog & News in <span className="title-color">Company</span>
+                                <h3 className="tp-section-title">Our Blog & <span className="title-color">News</span>
                                     <span className="title-right-shape"> 
                                         <LineArrowThree />
                                     </span>
@@ -29,8 +29,8 @@ const BlogArea = () => {
                             </div>
                             <div className="col-lg-6">
                             <div className="tp-blog-text justify-content-start justify-content-lg-end d-flex">
-                                <p>As the complexity of buildings to increase, the field of architecture 
-                                    <br /> became multi-disciplinary with technological expertise.
+                                <p>Technology is complex. Your decisions don't have to be. Get practical advice 
+                                    <br /> to demystify IT, protect your business, and make smarter investments in your tech.
                                 </p>
                             </div>
                             </div>

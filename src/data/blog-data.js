@@ -21,7 +21,7 @@ const blog_data = [
     category: "Technology",
     date: "29 Oct 2025",
     comments: "Comments (08)",
-    title: <>Connecting Tech & People for Real Impact</>,
+    title: "5 Signs Your Business Has Outgrown Its Current IT Support",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const blog_data = [
     category: "Innovation",
     date: "18 Oct 2025",
     comments: "Comments (14)",
-    title: <>Modernizing Legacy Systems Without Disruption</>,
+    title: "The CEO's Guide to Cybersecurity in Bangladesh",
   },
   {
     id: 3,
@@ -37,7 +37,23 @@ const blog_data = [
     category: "Strategy",
     date: "05 Oct 2025",
     comments: "Comments (11)",
-    title: <>From Strategy to Shipping: A Lean Path to ROI</>,
+    title: "Cloud vs. On-Premise Servers: Making the Right Choice in 2025",
+  },
+  {
+    id: 7,
+    img: blog_img_1,
+    category: "Technology",
+    date: "18 Oct 2025",
+    comments: "Comments (15)",
+    title: "Human-Centered Design That Teams Actually Adopt",
+  },
+  {
+    id: 8,
+    img: blog_img_2,
+    category: "Innovation",
+    date: "05 Oct 2025",
+    comments: "Comments (19)",
+    title: "From Strategy to Shipping: A Lean Path to ROI",
   },
     // for home 03 
  {
@@ -49,7 +65,7 @@ const blog_data = [
   category: "Technology",
   date: "29 Oct 2025",
   comments: "Comments (09)",
-  title: <>Modernizing Legacy Systems Without Disruption</>,
+  title: "Modernizing Legacy Systems Without Disruption",
 },
 {
   id: 5,
@@ -60,7 +76,7 @@ const blog_data = [
   category: "Innovation",
   date: "18 Oct 2025",
   comments: "Comments (21)",
-  title: <>Human-Centered Design That Teams Actually Adopt</>,
+  title: "Human-Centered Design That Teams Actually Adopt",
 },
 {
   id: 6,
@@ -71,7 +87,7 @@ const blog_data = [
   category: "Strategy",
   date: "05 Oct 2025",
   comments: "Comments (14)",
-  title: <>From Strategy to Shipping: A Lean Path to ROI</>,
+  title: "From Strategy to Shipping: A Lean Path to ROI",
 }
 
 

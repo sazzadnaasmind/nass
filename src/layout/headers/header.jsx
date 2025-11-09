@@ -7,7 +7,6 @@ import useSticky from '@/src/hooks/use-sticky';
 import HamburgerBtn from '@/src/svg/hamburger-btn';
 import React, { useEffect, useRef, useState } from 'react'; 
 import HomeIcon from '@/src/svg/home-icon';
-import SearchPopup from '@/src/modals/search-popup';
 import Sidebar from '@/src/modals/sidebar';
 import Logo from "@assets/img/logo/logo.png";
 import Logo2 from "@assets/img/logo/footer_logo2.png";
@@ -15,7 +14,6 @@ import Logo2 from "@assets/img/logo/footer_logo2.png";
 const HeaderOne = () => {
    const {sticky}  =  useSticky()
    const langToggleRef = useRef(null);
-   const [searchOpen, setSearchOpen] = useState(false)
    const [sidebarOpen, setSidebarOpen] = useState(false)
    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -77,17 +75,17 @@ const HeaderOne = () => {
                   <div className="tp-header-bottom-space p-relative">
                      <div className="container-fluid gx-0">
                         <div className="row gx-0 align-items-center">
-                           <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-6">
-                           <div className="tp-header-main-left d-flex align-items-center p-relative">
-                                 <div className="tp-header-logo">
+                           <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
+                           <div className="tp-header-main-left d-flex align-items-center justify-content-start p-relative">
+                                 <div className="tp-header-logo ms-5">
                                     <Link href="/">
                                        <Image src={Logo2} alt="theme-pure" height={50} width={160} />
                                     </Link>
                                  </div>
                               </div>
                               </div>
-                           <div className="col-xxl-6 col-xl-6 col-lg-6 d-none d-lg-block">
-                              <div className="tp-main-menu-area d-flex align-items-center">
+                           <div className="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">
+                              <div className="tp-main-menu-area d-flex align-items-center justify-content-center">
                                  <div className="tp-main-menu menu-icon">
                                  <span className="header-icon"><HomeIcon /></span>
                                   <nav id="tp-mobile-menu">
@@ -98,10 +96,7 @@ const HeaderOne = () => {
                            </div>
                            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
                            <div className="tp-header-main-right d-flex align-items-center justify-content-end">
-                              <div className="tp-header-search search-open-btn d-none d-lg-block">
-                                 <button onClick={() => setSearchOpen(true)}><i className="fa-regular fa-magnifying-glass"></i></button>
-                              </div>
-                                 <div className="tp-header-btn d-none d-lg-block pl-40">
+                                 <div className="tp-header-btn d-none d-lg-block">
                                     <Link className="tp-btn" href="/contact">Get Started Today</Link>
                                  </div>
                                  
@@ -160,7 +155,6 @@ const HeaderOne = () => {
             </div>
             <div className={`body-overlay ${mobileMenuOpen ? 'opened' : ''}`} onClick={() => setMobileMenuOpen(false)}></div>
             
-            <SearchPopup searchOpen={searchOpen} setSearchOpen={setSearchOpen} />
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         </>
     );

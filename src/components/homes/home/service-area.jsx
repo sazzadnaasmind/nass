@@ -21,29 +21,21 @@ import reload_img from "@assets/img/fun-fact/world.png";
 
 
   const counter_content = [
-   // {
-   //    id: 1, 
-   //    count: 6,
-   //    info: "Experience",
-   //    cls: "",
-   //    cls_2: "purecounter",
-   //    icon: "+",
-   // },
    {
-      id: 2, 
-      count: 1570,
-      info: "square area",
-      cls: "purecounter",
-      cls_2: "",
-      icon: "",
+      id: 1, 
+      count: 40,
+      info: "Reduction in IT Incidents on Average",
+      cls: "",
+      cls_2: "purecounter",
+      icon: "%",
    },
    {
-      id: 3, 
-      count: 210,
-      info: "square area",
+      id: 2, 
+      count: 24,
+      info: "Proactive System Monitoring & Support",
       cls: "purecounter",
       cls_2: "",
-      icon: "",
+      icon: "/7",
    },
   ]
 const ServiceArea = () => {
@@ -106,14 +98,15 @@ const ServiceArea = () => {
                         <div className="col-lg-12">
                            <div className="tp-service-title-wrapper text-center">
                               <span className="tp-section-title__pre">
-                                 service <span className="title-pre-color">IT Solutions</span> 
+                                 Your Complete Suite of <span className="title-pre-color">IT Services</span> 
                                  <AngleArrow />                                 
                               </span>
-                              <h3 className="tp-section-title">All Professional <i>IT Solutions</i> & Services
+                              <h3 className="tp-section-title">IT Solutions & <i>Services</i>
                                  <span className="title-center-shape"> 
                                     <LineArrowTwo />
                                  </span> 
                               </h3>
+                              <p className="mt-3">From foundational infrastructure to strategic growth initiatives, we provide every service you need under one roof.</p>
                            </div>
                         </div>
 
@@ -147,7 +140,7 @@ const ServiceArea = () => {
                      <div className="row">
                         <div className="col-lg-12">
                            <div className="tp-service-all-btn text-center fadeUp">
-                              <Link className="tp-btn" href="/service-details">View all Services</Link>
+                              <Link className="tp-btn" href="/service">View All Services</Link>
                            </div>
                         </div>
                      </div>
@@ -193,26 +186,19 @@ const ServiceArea = () => {
                                     service <span className="title-pre-color">IT Solutions</span> 
                                     <AngleArrow />
                                  </span>
-                                 <h3 className="tp-section-title">Tech Change The World
+                                 <h3 className="tp-section-title">Technology That Transforms Your Operations
                                     <span className="title-left-shape"> 
                                     <LineArrowTwo />
                                     </span>
                                  </h3>
                                  <p>
-                                    Our company provides a full range of services for the construction of <br /> private houses and cottages since 19
+                                    We provide the strategic framework that turns your technology from a daily cost into a long-term competitive advantage.
                                  </p>
-                                 <ul>
-                                    <li>
-                                       <span> <GreenRightArrow /></span>
-                                       series of manual and semi-manual activities.
-                                    </li>
-                                    <li>
-                                       <span><GreenRightArrow /> </span>
-                                       onstruction is different from other industries.
-                                    </li>
-                                 </ul>
+                                 <p className="mb-3">
+                                    Unlike break-fix IT services, our approach is proactive. We constantly monitor your systems to identify and resolve potential issues before they can impact your business, ensuring best operations.
+                                 </p>
                                  <div className="tp-fun-fact-btn">
-                                    <Link className="tp-btn" href="/service-details">Tell us How Can We Help</Link>
+                                    <Link className="tp-btn" href="/contact">Tell us How Can We Help</Link>
                                  </div>
                               </div>
                            </div>

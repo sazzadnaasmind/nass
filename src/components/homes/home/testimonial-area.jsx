@@ -38,62 +38,30 @@ const testimonial_data = [
     {
         id: 1, 
         avatar: user_1,
-        name: "Cameron Williamson",
-        title: "Ceo & Founder",
-        description: <>are so beguiled and demorali ed by the <br />
-        tech of pleasure of the moment Dislike <br />
-        men who are so beguiled and demoraliz <br />
-        worlds ed by the charms of </>,
+        name: "Anis Ahmed",
+        title: "Director of Operations, Leading Apparel Manufacturer in Gazipur",
+        description: "Our garment factory's production line was crippled by constant network outages. We were losing money and credibility with every hour of downtime. The Naasmind team came in, did a full audit, and overhauled our entire network infrastructure. It's been six months of uninterrupted operations. I no longer hold my breath every time a big order comes in. They didn't just fix a problem; they gave me back my peace of mind.",
     },
     {
         id: 2, 
         avatar: user_2,
-        name: "Leslie Alexander",
-        title: "Ceo & Founder",
-        description: <>are so beguiled and demorali ed by the <br />
-        tech of pleasure of the moment Dislike <br/>
-        men who are so beguiled and demoraliz <br/>
-        worlds ed by the charms of </>,
+        name: "Fatima Begum",
+        title: "Founder, Dhaka-based Fintech Startup",
+        description: "As a startup in the fintech space, security is everything. We were so focused on our product that our cybersecurity felt like a patchwork quilt. Naasmind implemented a comprehensive security solution that not only protected us but also helped us meet regulatory compliance. It feels like we have an enterprise-level security team, which gives us immense confidence when talking to investors and clients.",
     },
     {
         id: 3, 
         avatar: user_3,
-        name: "Savannah Nguyen",
-        title: "Ceo & Founder",
-        description: <>are so beguiled and demorali ed by the <br />
-        tech of pleasure of the moment Dislike <br/>
-        men who are so beguiled and demoraliz <br/>
-        worlds ed by the charms of </>,
+        name: "Rahim Chowdhury",
+        title: "Head of Customer Experience, National E-commerce Brand",
+        description: "Our customer support was struggling with a clunky, old phone system. Calls were dropping, and tracking client communication was a nightmare. Naasmind's VoIP solution was a game-changer. It integrated perfectly with our CRM, and the call quality is flawless. Our team is more efficient, and our customers are happier. The best part? It actually costs us less than our old system.",
     },
-    {
+     {
         id: 4, 
-        avatar: user_1,
-        name: "Cameron Williamson",
-        title: "Ceo & Founder",
-        description: <>are so beguiled and demorali ed by the <br />
-        tech of pleasure of the moment Dislike <br/>
-        men who are so beguiled and demoraliz <br/>
-        worlds ed by the charms of </>,
-     },
-    {
-        id: 5, 
         avatar: user_2,
-        name: "Leslie Alexander",
-        title: "Ceo & Founder",
-        description: <>are so beguiled and demorali ed by the <br />
-        tech of pleasure of the moment Dislike <br/>
-        men who are so beguiled and demoraliz <br/>
-        worlds ed by the charms of </>,
-    },
-    {
-        id: 6, 
-        avatar: user_3,
-        name: "Savannah Nguyen",
-        title: "Ceo & Founder",
-        description: <>are so beguiled and demorali ed by the <br />
-        tech of pleasure of the moment Dislike <br/>
-        men who are so beguiled and demoraliz <br/>
-        worlds ed by the charms of </>,
+        name: "Anis Ahmed",
+        title: "Director of Operations, Leading Apparel Manufacturer in Gazipur",
+        description: "Our garment factory's production line was crippled by constant network outages. We were losing money and credibility with every hour of downtime. The Naasmind team came in, did a full audit, and overhauled our entire network infrastructure. It's been six months of uninterrupted operations. I no longer hold my breath every time a big order comes in. They didn't just fix a problem; they gave me back my peace of mind.",
     },
 ]
 
@@ -114,12 +82,11 @@ const TestimonialArea = () => {
                   <div className="col-lg-12">
                      <div className="tp-testimonial-title-wrapper text-center">
                         <span className="tp-section-title__pre">
-                           Client’s <span className="title-pre-color">Feedback
+                           Real Stories from <span className="title-pre-color">Businesses Like Yours
                            </span>
                            <AngleArrow /> 
                         </span>
-                        <h3 className="tp-section-title">All Professional <span className="title-color">Testimonial</span>
-                           & Feedback
+                        <h3 className="tp-section-title">Don't Just Take <span className="title-color">Our Word</span> For It
                            <span className="title-center-shape"> 
                                  <LineArrowTwo />
                            </span>

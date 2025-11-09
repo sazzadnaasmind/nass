@@ -1,8 +1,8 @@
 const answer_question_data = [
   {
     id: 1,
-    question: <>Can you provide of all IT Managenment services?</>,
-    answer: <>A Gdser has its own IP address, which is made public instead. While a rather seemingly insignificant change, the G.xber IP address can be used for a number of vital busines to everything from security to customer experience. IP address can be used</> ,
+    question: "What types of businesses do you support?",
+    answer: "We specialize in supporting small to medium-sized enterprises (SMEs) across various industries. Our solutions are designed to be scalable, growing with you as your business expands.",
     accordion_id: "One", 
     collapsed: "collapsed",
     aria_expanded: false,
@@ -10,8 +10,8 @@ const answer_question_data = [
   },
   {
     id: 2,
-    question: <>How many hours we get as part of a managed agreement?</>,
-    answer: <>A Gdser has its own IP address, which is made public instead. While a rather seemingly insignificant change, the G.xber IP address can be used for a number of vital busines to everything from security to customer experience. IP address can be used</> ,
+    question: "How do you ensure the security of my data?",
+    answer: "Security is our highest priority. We use a multi-layered approach including proactive monitoring, advanced firewalls, data encryption, and employee training to create a robust defense against cyber threats.",
     accordion_id: "Two", 
     collapsed: "",
     aria_expanded: true, 
@@ -20,8 +20,8 @@ const answer_question_data = [
   },
   {
     id: 3,
-    question: <>Why does my network website design need regular maintening?</>,
-    answer: <>A startup or start-up is started by individual founders or entrepreneurs to search for a repeatable and scalable business model. A startup or start-up is started by individual founders...</> ,
+    question: "What is your support response time?",
+    answer: "Our managed service plans include guaranteed response times. For critical system-down emergencies, we provide immediate support, with a dedicated engineer working on your issue within minutes.",
     accordion_id: "Three", 
     collapsed: "collapsed",
     aria_expanded: false,
@@ -29,9 +29,18 @@ const answer_question_data = [
   },
   {
     id: 4,
-    question: <>How many hours we get as part of a managed agreement?</>,
-    answer: <>A startup or start-up is started by individual founders or entrepreneurs to search for a repeatable and scalable business model. A startup or start-up is started by individual founders...</> ,
+    question: "Is outsourcing my IT really cost-effective?",
+    answer: "For most businesses, it's significantly more cost-effective. You gain access to an entire team of experts for less than the cost of one senior in-house IT employee, eliminating recruitment, training, and benefit costs.",
     accordion_id: "Four", 
+    collapsed: "collapsed",
+    aria_expanded: false,
+    active: "",
+  },
+  {
+    id: 5,
+    question: "How difficult is it to switch to Naasmind?",
+    answer: "We make the process seamless. Our dedicated onboarding team manages the entire transition, ensuring all your data, systems, and users are migrated smoothly with minimal to no disruption to your daily operations.",
+    accordion_id: "Five", 
     collapsed: "collapsed",
     aria_expanded: false,
     active: "",

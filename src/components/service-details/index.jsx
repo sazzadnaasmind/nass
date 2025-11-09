@@ -5,13 +5,16 @@ import ServiceDetailsArea from "./service-details-area";
 import FooterContact from "@/src/layout/footers/footer-contact";
 import Footer from "@/src/layout/footers/footer";
 
-const ServiceDetails = () => {
+const ServiceDetails = ({ serviceData }) => {
   return (
     <>
       <HeaderOne />
       <main>
-        <Breadcrumb top_title="Machine Learning" page_title="Service Details" />
-        <ServiceDetailsArea />
+        <Breadcrumb 
+          top_title={serviceData?.breadcrumb || "Service"} 
+          page_title="Service Details" 
+        />
+        <ServiceDetailsArea serviceData={serviceData} />
         <FooterContact bg_style={true} />
       </main>
       <Footer />

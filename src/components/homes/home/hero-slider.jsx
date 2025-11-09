@@ -37,27 +37,27 @@ const slider_data = [
     bg_img: "/assets/img/hero/hero-2.jpg",
     sub_title_1: "best",
     sub_title_2: "it solutions",
-    hero_title_1: "platform of",
-    hero_title_2: "Tech",
-    hero_support: "support",
+    hero_title_1: "Stop Worrying About",
+    hero_title_2: "IT.",
+    hero_support: "Start Growing Your Business",
   },
   {
     id: 2,
     bg_img: "/assets/img/hero/hero-1.jpg",
     sub_title_1: "best",
     sub_title_2: "it solutions",
-    hero_title_1: "IT service & ",
-    hero_title_2: "Tech",
-    hero_support: "Bundles",
+    hero_title_1: "Stop Worrying About",
+    hero_title_2: "IT.",
+    hero_support: "Start Growing Your Business",
   },
   {
     id: 3,
     bg_img: "/assets/img/hero/hero-3.jpg",
     sub_title_1: "best",
     sub_title_2: "it solutions",
-    hero_title_1: "platform of",
-    hero_title_2: "Tech",
-    hero_support: "Solution",
+    hero_title_1: "Stop Worrying About",
+    hero_title_2: "IT.",
+    hero_support: "Start Growing Your Business",
   },
 ];
 // shapes 
@@ -177,7 +177,7 @@ const HeroSlider = () => {
             <div className="tp-hero-service-shape">
               <Image src={service_shape} alt="theme-pure" />
             </div>
-           <p> We deliver modern tech <span>services</span> from strategy and UX to engineering since 2023. </p>
+           <p>Naasmind offers proactive IT support and managed services for businesses across Bangladesh, designed to <span>increase your uptime</span> and protect your data.</p>
             <div className="tp-hero-service-quote">
               <Image src={service_quote} alt="theme-pure" />
             </div>

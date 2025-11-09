@@ -16,42 +16,38 @@ const about_data = [
     {
         id:1,
         img: about_img_1,
-        title: "Business Services",
-  description: <>We design and ship human centered <br/>digital solutions aligning tech, people,<br/>  and process for measurable impact.</>,
+        title: "Apparel & RMG",
+        description: <>Streamline your supply chain and guarantee <br/>production uptime with our robust network <br/>infrastructure and custom ERP support.</>,
     },
     {
         id:2,
         img: about_img_2,
-        title: "Technology & Engineering",
-  description: <>Modernization, integrations, and<br/> automation that reduce cost, speed <br/>releases, and improve reliability.</>,
+        title: "Finance & Banking",
+        description: <>Ensure 100% compliance and protect client <br/>data with our multi-layered cybersecurity <br/>and high-availability infrastructure.</>,
     },
     {
-        id:2,
+        id:3,
         img: about_img_3,
-        title: "Artificial Intelligence",
-        description: <>As far as we might be concerned <br /> making an extraordinary advanc
-        <br /> ed experience is a blend bet</>,
+        title: "Healthcare",
+        description: <>Securely manage patient records and enable <br/>seamless telehealth with our HIPAA-compliant <br/>cloud and network solutions.</>,
     },
     {
-        id:1,
+        id:4,
         img: about_img_1,
-        title: "Business services",
-        description: <>As far as we might be concerned <br /> making an extraordinary advanc
-        <br /> ed experience is a blend bet</>,
+        title: "Retail & E-commerce",
+        description: <>Maximize your sales with a high-performance, <br/>secure, and scalable online platform that <br/>never lets your customers down.</>,
     },
     {
-        id:2,
+        id:5,
         img: about_img_2,
-        title: "Education and training",
-        description: <>As far as we might be concerned <br /> making an extraordinary advanc
-        <br /> ed experience is a blend bet</>,
+        title: "Education",
+        description: <>Create modern, interactive learning environments <br/>with our smart classroom technology and <br/>campus-wide secure networking.</>,
     },
     {
-        id:2,
+        id:6,
         img: about_img_3,
-        title: "Artificial intelligence",
-        description: <>As far as we might be concerned <br /> making an extraordinary advanc
-        <br /> ed experience is a blend bet</>,
+        title: "Manufacturing",
+        description: <>Increase factory floor output and reduce downtime <br/>with our Industrial IoT (IIoT) integrations <br/>and proactive monitoring.</>,
     },
 ]
 
@@ -129,14 +125,15 @@ const AboutArea = () => {
                            <div className="col-lg-8">
                               <div className="tp-about-title-wrapper p-relative">
                                  <span className="tp-section-title__pre">
-                                    best <span className="title-pre-color">it service</span>
+                                    Why We <span className="title-pre-color">Started Naasmind</span>
                                     <AngleArrow /> 
                                  </span>
-                                 <h3 className="tp-section-title">It Industries We’re Offering
+                                 <h3 className="tp-section-title">A Better Approach to IT in Bangladesh
                                     <span className="title-left-shape">
                                     <LineArrowTwo /> 
                                     </span>
                                  </h3>
+                                 <p className="mt-3">We founded Naasmind on a simple belief: technology should be a catalyst for growth, not a barrier. For too long, businesses in our region have been forced to deal with reactive, break-fix IT that causes more problems than it solves. We exist to change that, providing proactive, strategic IT partnerships that empower businesses to achieve their full potential.</p>
                               </div>
                            </div>
 
@@ -177,9 +174,9 @@ const AboutArea = () => {
                                 </Swiper> 
 
                            <div className="tp-about-call">
-                              <a href="tel:01310-069824">
+                              <a href="tel:+8801772337656">
                                  <p><i className="fa-solid fa-phone"></i> 
-                                 Provide IT services to hundreds customers <span>+8801772337656</span></p>
+                                 Call <span>+8801772337656</span> to see how we can help you.</p>
                               </a>
                            </div>
 

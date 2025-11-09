@@ -13,33 +13,37 @@ import SocialLinks, { CopyRight } from '@/src/common/social-links';
 const footer_content = { 
     contact_us: <> Contact us at <span>info@naastech.com</span></>,
     mail: "info@naastech.com",
-    contact_text: "PERFECT SOLUTION From  It Advisor",
+    contact_text: "Ready to See What Proactive IT Can Do for Your Business?",
     phone: "+8801772337656",
-    info: <>We design simple, useful, and inclusive products where technology serves people and delivers measurable outcomes.</>,
-    map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
-    address: <>7th Floor, Flat 7/A (South), Metro Pillar 267, 1281 Begum Rokeya Avenue, Mirpur Dhaka, Bangladesh
-
-</>,
-    mail_2: "needhelp@company.com",
+    info: <>Proactive IT solutions that drive business growth. We handle your technology, so you can focus on what matters.</>,
+    map: "https://www.google.com/maps/search/7th+Floor,+Flat+7/A+(South),+Metro+Pillar+267,+1281+Begum+Rokeya+Avenue,+Mirpur+Dhaka,+Bangladesh/@23.8103,90.4125,12z",
+    address: <>7th Floor, Flat 7/A (South), Metro Pillar 267, 1281 Begum Rokeya Avenue, Mirpur Dhaka, Bangladesh</>,
+    mail_2: "info@naastech.com",
     mail_phone: <>info@naastech.com <br /> +8801772337656</>,
 
-
     service_links: [
-        "Web Design,",
-        "Branding",
-        "Mobile App",
-        "Graphic Design",
-        "UI/UX Design",
-        "3D Modeling",
-        "Digital Marketing",
-        "Video Editing",
-        
-    ]
+        "Managed IT Services",
+        "Cybersecurity Solutions",
+        "Cloud Backup & Recovery",
+        "Data Backup & Restoration",
+        "VoIP Business Phones",
+        "IT Consulting",
+        "Product Development",
+    ],
 
+    quick_links: [
+        { name: "About Us", link: "/about" },
+        { name: "Industries We Serve", link: "/service" },
+        { name: "Our Blog (Resources)", link: "/blog" },
+        { name: "Contact Us", link: "/contact" },
+        { name: "FAQ", link: "#" },
+        { name: "Privacy Policy", link: "#" },
+    ],
 
-
+    newsletter_text: "Get exclusive IT tips, security alerts, and strategies that give your business a competitive edge.",
+    newsletter_disclaimer: "You can unsubscribe at any time. We respect your privacy."
 }
-const {contact_us, mail, contact_text, phone, info, map, address, mail_2, mail_phone, service_links} = footer_content
+const {contact_us, mail, contact_text, phone, info, map, address, mail_2, mail_phone, service_links, quick_links, newsletter_text, newsletter_disclaimer} = footer_content
 
 
 const Footer = () => {
@@ -100,30 +104,20 @@ const Footer = () => {
                             </div>
                             <div className="col-xl-3 col-lg-4 col-md-6">
                                 <div className="tp-footer-widget tp-footer-col-2">
-                                <h3 className="tp-footer-widget-title">Services Req </h3>
+                                <h3 className="tp-footer-widget-title">Services</h3>
                                 <div className="tp-footer-widget-content">
                                     <ul>
-                                        {service_links.map((link, i) => <li key={i}><Link href="#">{link}</Link></li>)} 
+                                        {service_links.map((link, i) => <li key={i}><Link href="/service">{link}</Link></li>)} 
                                     </ul>
                                 </div>
                                 </div> 
                             </div>
                             <div className="col-xl-3 col-lg-4 col-md-6">
                                 <div className="tp-footer-widget tp-footer-col-3">
-                                <h3 className="tp-footer-widget-title">Contact Info</h3>
+                                <h3 className="tp-footer-widget-title">Company</h3>
                                 <div className="tp-footer-widget-content">
-                                    <div className="tp-footer-author d-flex">
-                                        <div className="tp-footer-author-thumb">
-                                            <Image src={user} alt="theme-pure" />
-                                        </div>
-                                        <div className="tp-footer-author-content">
-                                            <span>Chat With Expert <br /> Active Now</span>
-                                        </div>
-                                    </div>
                                     <ul>
-                                        <li><Link href="#">Parking permission</Link></li>
-                                        <li><Link href="#">Fire Service Noc</Link></li>
-                                        <li><Link href="#">Report a Parking Violation</Link></li>
+                                        {quick_links.map((item, i) => <li key={i}><Link href={item.link}>{item.name}</Link></li>)} 
                                     </ul>
                                 </div>
                                 </div>
@@ -131,6 +125,9 @@ const Footer = () => {
                             <div className="col-xl-3 col-lg-5 col-md-6">
                                 <div className="tp-footer-widget tp-footer-col-4">
                                 <h3 className="tp-footer-widget-title">Newsletter</h3>
+                                <div className="tp-footer-widget-content">
+                                    <p className="mb-20">{newsletter_text}</p>
+                                </div>
                                 <div className="tp-footer-from">
                                     <div className="tp-footer-text-email p-relative">
                                         <input type="text" placeholder="Enter Email Address" />
@@ -138,12 +135,7 @@ const Footer = () => {
                                             <EmailAeroplan />
                                         </span>
                                     </div>
-                                    <div className="tp-footer-form-check">
-                                        <input className="form-check-input" id="flexCheckChecked" type="checkbox" />
-                                        <label className="form-check-label" htmlFor="flexCheckChecked">
-                                            I agree to all your terms and policies
-                                        </label>
-                                </div>
+                                    <p className="tp-footer-disclaimer mt-15" style={{fontSize: '12px', opacity: '0.8'}}>{newsletter_disclaimer}</p>
                                 <div className="tp-footer-widget-social">
                                     <SocialLinks /> 
 

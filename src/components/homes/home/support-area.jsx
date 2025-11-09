@@ -6,27 +6,27 @@ import React from 'react';
 const support_content = [
     {
         id: 1, 
-        count: 8, 
-        symbol: "hr",
+        count: "", 
+        symbol: "",
         cls: "fadeLeft",
-        title: "Quick Result",
-        info: <>Average time to resolve <br /> cyber attack.</>
+        title: "Cybersecurity Shield",
+        info: <>Proactive Threat Protection: Defending your <br /> business from evolving digital threats.</>
     },
     {
         id: 2, 
-        count: 3, 
-        symbol: "hr",
+        count: "", 
+        symbol: "",
         cls: "",
-        title: "Quick Reply",
-        info: <>Average time to resolve <br /> cyber attack.</>
+        title: "Cloud Migration",
+        info: <>Seamless Cloud Transition: Unlocking scalability <br /> and efficiency with expert cloud services.</>
     },
     {
         id: 3, 
-        count: 94, 
-        symbol: "%",
+        count: "", 
+        symbol: "",
         cls: "fadeRight",
-        title: "Quick Response",
-        info: <>Calling answered within <br /> 15 seconds.</>
+        title: "IT Consulting",
+        info: <>Strategic Tech Roadmap: Aligning your technology <br /> investments with your future business goals.</>
     },
 ]
 
@@ -39,14 +39,7 @@ const SupportArea = () => {
                 {support_content.map((item, i) =>
                     <div key={i} className="col-lg-4">
                         <div className="tp-support-feature-item d-flex p-relative fadeRight">
-                        <div className="tp-support-feature-counter">
-                            <div className="tp-support-feature-thumb">
-                                <img src="/assets/img/brand/shape-2.png" alt="theme-pure" />
-                            </div>
-                            <h3 className="support-feature-title"><span data-purecounter-duration="4" className="purecounter">
-                                <Count number={item.count}  text={item.symbol}  />
-                            </span></h3>
-                        </div>
+                      
                         <div className="tp-support-feature-content">
                             <h4 className="tp-support-feature-content-title">{item.title}</h4>
                             <p>{item.info}</p>

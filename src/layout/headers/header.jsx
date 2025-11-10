@@ -51,8 +51,8 @@ const HeaderOne = () => {
                                        </span>Metro Pillar 267, 1281 Begum Rokeya Avenue, Mirpur, Dhaka</a>
                                  </li>
                                  <li>
-                                    <a href="mailto:info@naastech.com"><span>
-                                       <i className="fa-solid fa-envelope"></i></span>info@naastech.com
+                                    <a href="mailto:info@naasmind.com"><span>
+                                       <i className="fa-solid fa-envelope"></i></span>info@naasmind.com
                                     </a>
                                  </li>
                                 
@@ -142,7 +142,7 @@ const HeaderOne = () => {
                            </li>
                            <li>
                               <i className="fa-solid fa-envelope"></i>
-                              <a href="mailto:info@naastech.com">info@naastech.com</a>
+                              <a href="mailto:info@naasmind.com">info@naasmind.com</a>
                            </li>
                            <li>
                               <i className="fa-solid fa-phone"></i>

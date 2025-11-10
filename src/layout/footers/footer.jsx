@@ -11,15 +11,15 @@ import SocialLinks, { CopyRight } from '@/src/common/social-links';
 
 
 const footer_content = { 
-    contact_us: <> Contact us at <span>info@naastech.com</span></>,
-    mail: "info@naastech.com",
+    contact_us: <> Contact us at <span>info@naasmind.com</span></>,
+    mail: "info@naasmind.com",
     contact_text: "Ready to See What Proactive IT Can Do for Your Business?",
     phone: "+8801772337656",
     info: <>Proactive IT solutions that drive business growth. We handle your technology, so you can focus on what matters.</>,
     map: "https://www.google.com/maps/search/7th+Floor,+Flat+7/A+(South),+Metro+Pillar+267,+1281+Begum+Rokeya+Avenue,+Mirpur+Dhaka,+Bangladesh/@23.8103,90.4125,12z",
     address: <>7th Floor, Flat 7/A (South), Metro Pillar 267, 1281 Begum Rokeya Avenue, Mirpur Dhaka, Bangladesh</>,
-    mail_2: "info@naastech.com",
-    mail_phone: <>info@naastech.com <br /> +8801772337656</>,
+    mail_2: "info@naasmind.com",
+    mail_phone: <>info@naasmind.com <br /> +8801772337656</>,
 
     service_links: [
         "Managed IT Services",

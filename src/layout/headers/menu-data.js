@@ -32,8 +32,8 @@ const menu_data = [
     id: 4,
     mega_menu: false,
     has_dropdown: false,
-    title: "Pages",
-    link: "/about",
+    title: "Portfolio",
+    link: "/portfolio",
     active: "",
   },
 

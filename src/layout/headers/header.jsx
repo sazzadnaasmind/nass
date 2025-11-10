@@ -97,7 +97,7 @@ const HeaderOne = () => {
                            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
                            <div className="tp-header-main-right d-flex align-items-center justify-content-end">
                                  <div className="tp-header-btn d-none d-lg-block">
-                                    <Link className="tp-btn" href="/contact">Get Started Today</Link>
+                                    <Link className="tp-btn" href="https://tidycal.com/sazzadnaasmind/naasmind" target="_blank" rel="noopener noreferrer">Get Started Today</Link>
                                  </div>
                                  
                                  {/* Mobile Menu Toggle */}
@@ -131,7 +131,7 @@ const HeaderOne = () => {
                         <MobileMenus />
                      </div>
                      <div className="tp-offcanvas-btn mt-40">
-                        <Link className="tp-btn w-100 text-center" href="/contact">Get Started Today</Link>
+                        <Link className="tp-btn w-100 text-center" href="https://tidycal.com/sazzadnaasmind/naasmind" target="_blank" rel="noopener noreferrer">Get Started Today</Link>
                      </div>
                      <div className="tp-offcanvas-contact mt-40">
                         <h4 className="tp-offcanvas-title mb-20">Contact Info</h4>
